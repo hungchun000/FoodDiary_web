@@ -1495,7 +1495,7 @@ img {
 
 .sonar-portfolio-menu {
   position: absolute;
-  bottom: 40px;
+  top: 130px;
   right: 0;
   width: 50%;
   z-index: 100;
@@ -1767,11 +1767,6 @@ img {
   color: #2f2f2f;
   background-color: transparent;
 }
-
-
-
-
-
 
 
 
