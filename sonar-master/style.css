@@ -479,6 +479,58 @@ img {
   color: #ffffff;
 }
 
+
+
+
+/*Group btn(Leave Group)*/
+
+.sonar-btnG {
+
+  position: relative;
+  z-index: 1;
+  min-width: 20px;
+  border: 1px solid;
+  border-color: #2f2f2f;
+  /* text-transform: uppercase; */
+  color: #2f2f2f;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  /* line-height: 64px; */
+  padding: 0;
+  background-color: #ffffff;
+  /* white-space:nowrap; */
+}
+
+.sonar-btnG:hover, .sonar-btnG:focus {
+  background-color: #2f2f2f;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.sonar-btnG.white-btn {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.sonar-btnG.white-btn:hover, .sonar-btnG.white-btn:focus {
+  background-color: #ffffff;
+  color: #2f2f2f;
+}
+
+
+.group {
+  display: inline;
+}
+
+
+
+
+
+
+
+
 .bg-overlay {
   position: relative;
   z-index: 1;
@@ -1756,6 +1808,20 @@ img {
 
 .form-controlMy {
   width: 85%;
+  height: 60px;
+  padding: 0 15px;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #c0c0c0;
+  border-radius: 0;
+  font-size: 12px;
+  font-style: italic;
+  color: #2f2f2f;
+  background-color: transparent;
+}
+
+.form-controlMy2 {
+  width: 75%;
   height: 60px;
   padding: 0 15px;
   border: none;
