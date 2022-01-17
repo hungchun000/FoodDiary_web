@@ -16,7 +16,7 @@ searchBar.addEventListener('keyup', (e) => {
 
 const loadCharacters = async () => {
     try {
-        const res = await fetch('https://run.mocky.io/v3/26fbbcef-db42-4d2f-ba6e-7287a1b56e16');
+        const res = await fetch('https://run.mocky.io/v3/edd11373-313d-47e1-842b-99d4eefa2af5');
         hpCharacters = await res.json();
         displayCharacters(hpCharacters);
     } catch (err) {
@@ -35,7 +35,7 @@ const displayCharacters = (characters) => {
                     <img class="effectfront" src="${character.image2}" style="width:500%; " />
                     <img class="" src="${character.image}" style="width:200px; " />
         
-                <a href="${character.recipe} styles = 'color:red;'">直接看菜單</a>
+                <a href="${character.recipe}" styles = 'color:red;'  target='_blank'>直接看菜單</a>
    
             </li>
         `;
