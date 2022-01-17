@@ -9,10 +9,10 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Sonar - Photography Template</title>
+    <title>Food Diary - lottery</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="img/fdicon.ico">
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
@@ -20,7 +20,7 @@
 </head>
 <style>
 *{
-  margin: 0;padding: 0;font-family: 'Poppins', sans-serif;
+  margin: 0;padding: 0;
 
 }
 /* span{
@@ -79,7 +79,7 @@
             document.getElementById('lott').setAttribute("class","");
             item.innerHTML = food[random];
             Map.innerHTML = "<br><br>"+html_address[random];
-            document.getElementById('background').setAttribute("style", "background-image: url(" +"img/Food_pic/food"+(random+1)+".jpeg);background-size: 700px 850px");
+            document.getElementById('background').setAttribute("style", "background-image: url(" +"img/Food_pic/food"+(random+1)+".jpeg);background-size: 600px 500px");
             console.log(random);
         },2000);
             //background-image: url(img/bg-img/food.jpg);
@@ -111,7 +111,7 @@
         </div>
         <!-- Logo Area -->
         <div class="logo-area">
-            <a href="index.html">Food Diary</a>
+            <a href="personalInfo.html">Food Diary</a>
         </div>
         <!-- Nav -->
         <div class="sonarNav">
@@ -119,23 +119,31 @@
                 <ul>
                     <!-- Menu 的內容 -->
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <!-- 個人資料 -->
-                        <a class="nav-link" href="about-me.html">About Me</a>
+                        <a class="nav-link" href="personalInfo.html">About Me</a>
                     </li>
                     <li class="nav-item">
                         <!-- 瀏覽飲食紀錄 -->
-                        <a class="nav-link" href="services.html">Record</a>
+                        <a class="nav-link" href="myRecord.html">Record</a>
                     </li>
                     <li class="nav-item">
                         <!-- 我的群組 -->
-                        <a class="nav-link" href="portfolio.html">Group</a>
+                        <a class="nav-link" href="group.html">Group</a>
                     </li>
                     <li class="nav-item">
                         <!-- 新增餐點 -->
-                        <a class="nav-link" href="blog.html">Add Diary</a>
+                        <a class="nav-link" href="addDiary.html">Add Diary</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- 搜尋店家 -->
+                        <a class="nav-link" href="search.html">Search Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- 隨機店家 -->
+                        <a class="nav-link" href="lottery.html">Random Shop</a>
                     </li>
                 </ul>
             </nav>
@@ -151,18 +159,18 @@
                     <div class="menu-area d-flex justify-content-between">
                         <!-- Logo Area  -->
                         <div class="logo-area">
-                            <a href="index.html">Food Diary</a>
+                            <a href="personalInfo.html">Food Diary</a>
                         </div>
 
                         <div class="menu-content-area d-flex align-items-center">
                             <!-- Header Social Area -->
                             <div class="header-social-area d-flex align-items-center">
                                 <!-- 右上角的圖案 -->
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Add Diary"><i
+                                <a href="addDiary.html" data-toggle="tooltip" data-placement="bottom" title="Add Diary"><i
                                         class="fa fa-plus" aria-hidden="true"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Sign-In"><i
+                                <a href="LoginAndRegister.html" data-toggle="tooltip" data-placement="bottom" title="Sign-In"><i
                                         class="fa fa-sign-in" aria-hidden="true"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Sign-Out"><i
+                                <a href="LoginAndRegister.html" data-toggle="tooltip" data-placement="bottom" title="Sign-Out"><i
                                         class="fa fa-sign-out" aria-hidden="true"></i></a>
                             </div>
                             <!-- Menu Icon -->
