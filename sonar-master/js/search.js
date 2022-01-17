@@ -33,7 +33,7 @@ const displayCharacters = (characters) => {
                 <p>House: ${character.house}</p>
               
                     <img class="effectfront" src="${character.image2}" style="width:500%; " />
-                    <img class="" src="${character.image}" style="width:200px; " />
+                    <img class="" src="${character.image}" style="width:200px;" />
         
                 <a href="${character.recipe}" styles = 'color:red;'  target='_blank'>直接看菜單</a>
    
