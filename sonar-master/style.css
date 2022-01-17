@@ -25,10 +25,6 @@
   padding: 0;
 }
 
-* { 
-  touch-action: pan-y;  
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -1659,12 +1655,12 @@ img {
   margin-bottom: 0;
 }
 
-.search-widget-area form {
+.search-widget-area{
   position: relative;
   z-index: 1;
 }
 
-.search-widget-area form input {
+.search-widget-area input {
   width: 100%;
   height: 42px;
   font-size: 12px;
@@ -1676,7 +1672,7 @@ img {
   background-color: transparent;
 }
 
-.search-widget-area form button {
+.search-widget-area button {
   width: 50px;
   height: 42px;
   background-color: #232323;

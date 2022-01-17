@@ -135,30 +135,30 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-9">
+                <div class="col-12 col-md-9" id="groupPost">
 
                     <!-- 群組的貼文 -->
                     <!-- Single Blog Area -->
                     <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Post Thumbnail -->
                         <div class="blog-post-thumbnail">
-                            <img src="img/blog-img/1.jpg" alt="">
+                            <img src="img/blog-img/珍煮丹_黑糖珍珠鮮奶.jpg" alt="">
                             <!-- Post Date -->
                             <div class="post-date">
-                                <a href="#">Jan 1 '09</a>
+                                <a href="javascript: void(0)">Jan 1 '09</a>
                             </div>
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
-                            <a href="#" class="headline">添好茶 <strong>紅豆鮮奶</strong></a>
+                            <a href="javascript: void(0)" class="headline">珍煮丹 <strong>黑糖珍珠鮮奶</strong></a>
                             <div class="post-meta">
-                                <a href="#" class="comments">By Chiu</a> | <a href="#" class="comments" style="color:gold">
+                                <a href="javascript: void(0)" class="comments">By Chiu</a> | <span style="color:gold">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
-                                </a>
+                                </span>
                             </div>
                             <h6>1份 
                                 <i class="fa fa-dollar" style="color:darkgoldenrod">75元 </i>
@@ -182,7 +182,7 @@
                     <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="600ms">
                         <!-- Post Thumbnail -->
                         <div class="blog-post-thumbnail">
-                            <img src="img/blog-img/2.jpg" alt="">
+                            <img src="img/blog-img/珍煮丹_草莓珍奶.jpg" alt="">
                             <!-- Post Date -->
                             <div class="post-date">
                                 <a href="#">Feb 12 '18</a>
@@ -190,7 +190,7 @@
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
-                            <a href="#" class="headline">珍煮丹 <strong>黑糖珍珠厚鮮奶</strong></a>
+                            <a href="#" class="headline">珍煮丹 <strong>草莓珍奶</strong></a>
                             <div class="post-meta">
                                     <a href="#" class="comments">By Chen</a> | <a href="#" class="comments" style="color:gold">
                                         <i class="fa fa-star"></i>
@@ -214,7 +214,7 @@
                     <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="900ms">
                         <!-- Post Thumbnail -->
                         <div class="blog-post-thumbnail">
-                            <img src="img/blog-img/3.jpg" alt="">
+                            <img src="img/blog-img/20181220201051_10.jpg" alt="">
                             <!-- Post Date -->
                             <div class="post-date">
                                 <a href="#">Dec 12 '02</a>
@@ -246,19 +246,17 @@
                         <!-- 搜尋 -->
                         <!-- Search Widget -->
                         <div class="search-widget-area mb-50">
-                            <form action="#" method="get">
-                                <input type="search" placeholder="Search">
-                                <button type="submit"><i class="ti-search"></i></button>
-                            </form>
+                            <input type="search" placeholder="Search" id="searchGroupId">
+                            <button type="submit" id="search-btn"><i class="ti-search"></i></button>
                         </div>
 
                         <!-- Catagories Widget -->
                         <div class="sonar-catagories-widget-area mb-50">
                             <h6>搜尋結果</h6>
-                            <p><i class="bi bi-record-fill"> </i>飲食控管討論區</p>
-                            <p><i class="bi bi-x-lg"> </i>無此群組</p>
-                            <ul class="catagories-menu">
-                                <li><a href="#"><i class="bi bi-plus-lg"></i> 加入群組</a></li>
+                            <p id="searchResult" style="font-weight:bold"></p>
+                            <p id="noResult" style="display: none"><i class="bi bi-x-lg"> </i>無此群組</p>
+                            <ul class="catagories-menu" id="joinGroup" style="display: none">
+                                <li><a href="javascript: void(0)"><i class="bi bi-plus-lg"></i> 加入群組</a></li>
                                 <!-- 搜尋時出現 -->
                             </ul>
                         </div>
@@ -266,21 +264,20 @@
                         <!-- Archive Widget -->
                         <div class="sonar-catagories-widget-area mb-50">
                             <h6>我的群組</h6>
-                            <ul class="catagories-menu">
-                                <li><a href="#">幸福一家人</a></li>
-                                <li><a href="#">我要吃肉肉</a></li>
-                                <li><a href="#">9年25班</a></li>
-                                <li><a href="#">哈哈哈這是一個群組</a></li>
+                            <ul class="catagories-menu" id="groupList">
+                                <!-- 群組列表 -->
                             </ul>
                         </div>
                         
                         <!-- 創建新群組 -->
                         <div class="sonar-catagories-widget-area mb-50">
                             <h6>創立群組</h6>
-                            <input type="text" class="form-controlMy" placeholder="Group Name" style="display: inline-block;">
+                            <input type="text" id="createGroupName" class="form-controlMy" 
+                                placeholder="Group Name" style="display: inline-block;">
                             <ul class="catagories-menu">
-                                <li><a href="#"><i class="bi bi-check-lg"></i> 確認創建</a></li>
+                                <li><a href="javascript: void(0)" id="createGroup-btn"><i class="bi bi-check-lg"></i> 確認創建</a></li>
                             </ul>
+                            <p id="createResult" style="font-size:16px"></p>
                         </div>
 
                     </div>
@@ -289,7 +286,7 @@
 
             <div class="row">
                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms">
-                    <a href="#" class="btn sonar-btn">Load More</a>
+                    <a id="loadMorePost" href="javascript: void(0)" class="btn sonar-btn">Load More</a>
                 </div>
             </div>
         </div>
@@ -306,6 +303,9 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+    <script src="barInit.js" type="text/javascript"></script>
+    <script src="group.js" type="text/javascript"></script>
 
 </body>
 

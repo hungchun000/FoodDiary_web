@@ -84,7 +84,7 @@
         <div class="copywrite-text">
             <!-- Menu 底部的copyright -->
             <p>
-                
+
             </p>
         </div>
     </div>
@@ -109,10 +109,12 @@
                                 <a href="addDiary.html" data-toggle="tooltip" data-placement="bottom" title="Add Diary">
                                     <i class="fa fa-plus" aria-hidden="true"></i></a>
                                 <!-- (登入) -->
-                                <a href="#" id="logInBtn" data-toggle="tooltip" data-placement="bottom" title="Sign-In">
+                                <a href="LoginAndRegister.html" id="logInBtn" data-toggle="tooltip"
+                                    data-placement="bottom" title="Sign-In">
                                     <i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 <!-- (登出) -->
-                                <a href="LoginAndRegister.html" id="logOutBtn" data-toggle="tooltip" data-placement="bottom" title="Sign-Out">
+                                <a href="LoginAndRegister.html" id="logOutBtn" data-toggle="tooltip"
+                                    data-placement="bottom" title="Sign-Out">
                                     <i class="fa fa-sign-out" aria-hidden="true"></i></a>
                             </div>
                             <!-- Menu Icon -->
@@ -138,90 +140,80 @@
 
                 <div class="portfolio-area section-padding-50">
                     <div class="portfolio-title">
-                        <h2>“ Add your <span>Diary</span> .”</h2>
+                        <h2>“ Add your <br>&emsp;&emsp;&emsp;&emsp;&emsp;Food <span>Diary</span> .”</h2>
                     </div>
                     <!-- 畫線 -->
-                    <div style="width: 100px; height: 1px; background-color: #232323; margin: 30px; display: block;"></div>
+                    <div style="width: 100px; height: 1px; background-color: #232323; margin: 30px; display: block;">
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-9">
                     <h4>店家名稱</h4>
-                    <input type="text" class="form-controlMy" placeholder="Shop name" required>
-                    <P></P>
+                    <input type="text" id="shopName" class="form-controlMy" placeholder="Shop name">
+                    <P id="shopNameMsg"></P>
                     <br>
 
                     <h4>餐點內容</h4>
-                    <input type="text" class="form-controlMy" placeholder="Food" required>
-                    <P></P>
+                    <input type="text" id="foodName" class="form-controlMy" placeholder="Food">
+                    <P id="foodNameMsg"></P>
                     <br>
 
                     <h4>用餐時段</h4>
-                    <input type="radio" name="period" value="Breakfast" style="width: 7%; height: 25px;">
+                    <input type="radio" name="mealTime" value="breakfast" style="width: 7%; height: 25px;">
                     <i class="bi bi-brightness-alt-high">Breakfast</i>
-                    <input type="radio" name="period" value="Lunch" style="width: 7%; height: 25px;">
+                    <input type="radio" name="mealTime" value="lunch" style="width: 7%; height: 25px;">
                     <i class="bi bi-brightness-high">Lunch</i>
-                    <input type="radio" name="period" value="Dinner" style="width: 7%; height: 25px;">
+                    <input type="radio" name="mealTime" value="dinner" style="width: 7%; height: 25px;">
                     <i class="bi bi-cloud-moon">Dinner</i>
-                    <input type="radio" name="period" value="NightMeal" style="width: 7%; height: 25px;">
+                    <input type="radio" name="mealTime" value="nightMeal" style="width: 7%; height: 25px;">
                     <i class="bi bi-moon">Night Meal</i>
-                    <input type="radio" name="period" value="Other" style="width: 7%; height: 25px;">
+                    <input type="radio" name="mealTime" value="other" style="width: 7%; height: 25px;">
                     <i class="bi bi-emoji-wink">Other</i>
-                
-                    <P></P>
+
+                    <P id="mealTimeMsg"></P>
                     <br>
 
                     <h4>餐點數量</h4>
-<<<<<<< Updated upstream
-                    <input type="number" class="form-controlMy" placeholder="(份)" min="0">
-=======
-                    <input type="number" class="form-controlMy" min="1" placeholder="(份)">
->>>>>>> Stashed changes
-                    <P></P>
+                    <input type="number" id="foodCount" class="form-controlMy" min="1" placeholder="(份)">
+                    <P id="foodCountMsg"></P>
                     <br>
 
                     <h4>餐點熱量</h4>
-<<<<<<< Updated upstream
-                    <input type="number" class="form-controlMy" placeholder=" (cal)" min="0">
-=======
-                    <input type="number" class="form-controlMy" min="0" placeholder=" (cal)">
->>>>>>> Stashed changes
-                    <P></P>
+                    <input type="number" id="foodCal" class="form-controlMy" min="0" placeholder=" (cal)">
+                    <P id="foodCalMsg"></P>
                     <br>
 
                     <h4>餐點金額</h4>
-<<<<<<< Updated upstream
-                    <input type="number" class="form-controlMy" placeholder="$(元)" min="0">
-=======
-                    <input type="number" class="form-controlMy" min="0" placeholder="$(元)">
->>>>>>> Stashed changes
-                    <P></P>
+                    <input type="number" id="foodCost" class="form-controlMy" min="0" placeholder="$(元)">
+                    <P id="foodCostMsg"></P>
                     <br>
 
                     <h4>餐點評分</h4>
-                    <input type="range" max="5" min="1">
-                    <P></P>
+                    <input type="range" id="foodPoint" value="5" max="5" min="1">
+                    <P id="foodPointMsg"></P>
                     <br>
 
                     <h4>餐點圖片</h4>
-                    <input type="file" accept="image/*">
-                    <P></P>
+                    <input type="file" id="foodImg" accept="image/*">
+                    <P id="foodImgMsg"></P>
                     <br>
 
                     <h4>用餐日期</h4>
                     <!-- 日期的格式為 yyyy-mm-dd -->
-                    <input type="date" class="form-controlMy">
-                    <P></P>
+                    <input type="date" id="mealDate" class="form-controlMy">
+                    <P id="mealDateMsg"></P>
                     <br>
 
                     <h4>備註</h4>
-                    <textarea rows="3" class="info_textarea" placeholder="Something want to say..."></textarea>
-                    <P></P>
+                    <textarea rows="3" id="foodNote" class="info_textarea" placeholder="Something want to say..."></textarea>
+                    <P id="foodNoteMsg"></P>
 
                     <div class="text-center" style="padding:5%">
-                        <a href="#" class="btn sonar-btn">S a v e</a>
+                        <p id="errorMsg"></p>
+                        <a href="javascript: void(0)" id="save-btn" class="btn sonar-btn">S a v e</a>
                     </div>
                 </div>
-                
+
                 <!-- 右邊 常吃的餐點 -->
                 <div class="col-12 col-md-3">
                     <div class="sonar-blog-sidebar-area">
@@ -229,69 +221,13 @@
                         <div class="latest-news-widget-area mb-50">
                             <h6>常吃餐點</h6>
                             <div class="widget-blog-post">
-                                
-                                <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex align-items-start">
-                                    <div class="widget-post-thumbnail pr-3">
-                                        <img src="img/blog-img/lp1.png" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="#">添好茶 <strong>紅豆奶茶</strong></a>
-                                        <br>
-                                        <i class="fa fa-dollar" style="color:darkgoldenrod">50元 </i>
-                                        <i class="fa fa-fire" style="color:darkred">425 cal </i>
-                                        <p>溫半</p>
-                                    </div>
-                                </div>
-                                
-                                <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex align-items-start">
-                                    <div class="widget-post-thumbnail pr-3">
-                                        <img src="img/blog-img/lp2.png" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="#">珍煮丹 <strong>黑糖珍珠厚鮮奶</strong></a>
-                                        <br>
-                                        <i class="fa fa-dollar" style="color:darkgoldenrod">140元 </i>
-                                        <i class="fa fa-fire" style="color:darkred">575 cal </i>
-                                        <p>去冰微糖去冰微糖去冰...</p>
-                                    </div>
-                                </div>
-                                
-                                <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex align-items-start">
-                                    <div class="widget-post-thumbnail pr-3">
-                                        <img src="img/blog-img/lp3.png" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="#">八方雲集 <strong>韓式辣味鍋貼</strong></a>
-                                        <br>
-                                        <i class="fa fa-dollar" style="color:darkgoldenrod">90元 </i>
-                                        <i class="fa fa-fire" style="color:darkred">1025 cal </i>
-                                        <p>無</p>
-                                    </div>
-                                </div>
-                                
-                                <!-- Single Blog Post -->
-                                <div class="widget-single-blog-post d-flex align-items-start">
-                                    <div class="widget-post-thumbnail pr-3">
-                                        <img src="img/blog-img/lp4.png" alt="">
-                                    </div>
-                                    <div class="widget-post-content">
-                                        <a href="#">永亨鹹酥雞 <strong>鹹酥雞</strong></a>
-                                        <br>
-                                        <i class="fa fa-dollar" style="color:darkgoldenrod">80元 </i>
-                                        <i class="fa fa-fire" style="color:darkred">1050 cal </i>
-                                        <p>+9層塔 好吃</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- ***** Blog Area End ***** -->
@@ -306,6 +242,9 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+    <script src="barInit.js" type="text/javascript"></script>
+    <script src="addDiary.js" type="text/javascript"></script>
 
 </body>
 

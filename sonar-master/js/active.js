@@ -109,7 +109,8 @@
         $('.testimonial-slides').owlCarousel({
             items: 1,
             margin: 0,
-            loop: true,
+            // loop: true,
+            loop: ($('.owl-carousel > *').length< 5),
             dots: true,
             autoplay: true,
             autoplayTimeout: 5000,
