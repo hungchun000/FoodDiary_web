@@ -31,8 +31,11 @@ const displayCharacters = (characters) => {
             <li class="character">
                 <h2>${character.name}</h2>
                 <p>House: ${character.house}</p>
-                <img src="${character.image}"></img>
+            <div style = "background-image:  url('${character.image}') no-repeat; margin: 0 auto; display: block;">
+                <img class="effectfront" src="${character.image}" style="width:100px;" />
+            </div>
                 <a href="${character.recipe} styles = 'color:black;'">菜單</a>
+   
             </li>
         `;
     
