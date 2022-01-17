@@ -74,11 +74,12 @@
             let Map = document.getElementById('Map');  
             let back = document.getElementById('background');
             document.getElementById('lott').setAttribute("class","rotate");
+            item.innerHTML = "";
             setTimeout(function(){
             document.getElementById('lott').setAttribute("class","");
             item.innerHTML = food[random];
-            Map.innerHTML = html_address[random];
-            document.getElementById('background').setAttribute("style", "background-image: url(" +"img/Food_pic/food"+(random+1)+".jpeg);background-size: 700px 600px");
+            Map.innerHTML = "<br><br>"+html_address[random];
+            document.getElementById('background').setAttribute("style", "background-image: url(" +"img/Food_pic/food"+(random+1)+".jpeg);background-size: 700px 850px");
             console.log(random);
         },2000);
             //background-image: url(img/bg-img/food.jpg);
