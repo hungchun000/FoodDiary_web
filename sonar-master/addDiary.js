@@ -5,6 +5,7 @@ var fileInput= document.querySelector("#foodImg");
 fileInput.addEventListener("change", function(event) { 
     const file = event.target.files[0]; // 得到檔案的 Blob
     if(file){
+        //jpeg
         var validExts = new Array(".gif", ".jpg", ".png");
         var fileExt = fileInput.value;
         fileExt = fileExt.substring(fileExt.lastIndexOf('.'));
